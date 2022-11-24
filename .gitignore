@@ -1,4 +1,6 @@
 *.odt
 *.pdf
-computer-networks-mini-project
 node_modules
+.idea
+.vscode
+.fleet
