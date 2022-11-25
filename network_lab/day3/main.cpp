@@ -101,13 +101,13 @@ int main() {
     }
 
     string encrypted = encrypt_baconian(plain_text, encryption_text);
-    // string decrypted = decrypt_baconian(plain_text, encryption_text);
+    string decrypted = decrypt_baconian(plain_text, encryption_text);
 
-    // cout << "Plain text: " << plain_text << endl;
-    // cout << "Encryption text: " << encryption_text << endl;
+    cout << "Plain text: " << plain_text << endl;
+    cout << "Encryption text: " << encryption_text << endl;
     cout << "Cipher text: " << encrypted << endl;
     cout << "Preserved: " << preserve_message(encrypted, encryption_text) << endl;
-    // cout << "Decrypted text: " << decrypted << endl;
+    cout << "Decrypted text: " << decrypted << endl;
 
     return 0;
 }

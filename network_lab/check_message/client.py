@@ -12,8 +12,8 @@ def client_receive():
             message = client.recv(1024).decode('utf-8')
             if message == "alias?":
                 client.send(alias.encode('utf-8'))
-            else:
-                print(message)
+            else: pass
+                # print(message)
         except:
             print('Error!')
             client.close()

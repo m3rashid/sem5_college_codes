@@ -26,9 +26,8 @@ int main(int argc, char *argv[]) {
     fd_set readfds;
 
     // a message
-    char *message = "ECHO Daemon v1.0 \r\n";
+    char message[] = "ECHO Daemon v1.0 \r\n";
 
-    // initialise all client_socket[] to 0 so not checked
     for (i = 0; i < max_clients; i++) {
         client_socket[i] = 0;
     }
